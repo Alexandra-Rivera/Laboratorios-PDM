@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Labo03 Constraint Layouts</string>
     <string name="mainTitle">Cantidad de dinero</string>
     <string name="cantidad">0</string>
     <string name="fiveCents">$0.05</string>

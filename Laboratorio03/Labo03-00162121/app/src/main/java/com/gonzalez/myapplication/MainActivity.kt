@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import java.math.RoundingMode
 import java.text.DecimalFormat
+import kotlin.math.round
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,41 +41,29 @@ class MainActivity : AppCompatActivity() {
         imgFiveCents.setOnClickListener {
             suma += fiveCents
 
-            var df = DecimalFormat("#.###")
-            df.roundingMode = RoundingMode.UNNECESSARY
-            var round = df.format(suma).toDouble()
-
-            txtCantidad.text = round.toString()
+            val roundoff = String.format("%.2f", suma)
+            txtCantidad.text = roundoff
         }
 
         imgTenCents.setOnClickListener {
             suma += tenCents
 
-            var df = DecimalFormat("#.###")
-            df.roundingMode = RoundingMode.UNNECESSARY
-            var round = df.format(suma).toDouble()
-
-            txtCantidad.text = round.toString()
+            val roundoff = String.format("%.2f", suma)
+            txtCantidad.text = roundoff
         }
 
         imgQuarter.setOnClickListener {
             suma += quarter
 
-            var df = DecimalFormat("#.###")
-            df.roundingMode = RoundingMode.UNNECESSARY
-            var round = df.format(suma).toDouble()
-
-            txtCantidad.text = round.toString()
+            val roundoff = String.format("%.2f", suma)
+            txtCantidad.text = roundoff
         }
 
         imgOneDollar.setOnClickListener {
             suma += oneDollar
 
-            var df = DecimalFormat("#.###")
-            df.roundingMode = RoundingMode.UNNECESSARY
-            var round = df.format(suma).toDouble()
-
-            txtCantidad.text = round.toString()
+            val roundoff = String.format("%.2f", suma)
+            txtCantidad.text = roundoff
         }
     }
 }
