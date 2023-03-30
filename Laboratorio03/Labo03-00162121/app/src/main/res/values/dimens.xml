@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imagedimens">
+        123dp
+    </dimen>
+    <dimen name="imagedimen">123dp</dimen>
+    <dimen name="marginstart">48dp</dimen>
+    <dimen name="marginend">36dp</dimen>
+    <dimen name="imgmarginstart">52dp</dimen>
+    <dimen name="imgmarginend">36dp</dimen>
+    <dimen name="txtviewmarginstart">108dp</dimen>
+    <dimen name="txtviewmarginendtencents">96dp</dimen>
+    <dimen name="txtviewmarginendOnedollar">92dp</dimen>
+    <dimen name="txtviewmargintopOnedollar">12dp</dimen>
+    <dimen name="txtviewmargintoptitle">124dp</dimen>
+    <dimen name="textsizetitle">30sp</dimen>
+    <dimen name="textsizeCantidad">50sp</dimen>
+</resources>

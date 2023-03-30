@@ -11,10 +11,10 @@
         android:id="@+id/maintitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="@dimen/txtviewmargintoptitle"
         android:text="@string/mainTitle"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="@dimen/textsizetitle"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cantidad"
-        android:textSize="50sp"
+        android:textSize="@dimen/textsizeCantidad"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,9 +36,9 @@
 
     <ImageView
         android:id="@+id/imgFiveCents"
-        android:layout_width="123dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="@dimen/imagedimen"
+        android:layout_height="@dimen/imagedimen"
+        android:layout_marginStart="@dimen/marginstart"
         android:contentDescription="@string/imgDescription"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imgTenCents"
@@ -51,9 +51,9 @@
 
     <ImageView
         android:id="@+id/imgTenCents"
-        android:layout_width="123dp"
-        android:layout_height="123dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="@dimen/imagedimen"
+        android:layout_height="@dimen/imagedimen"
+        android:layout_marginEnd="@dimen/marginend"
         android:contentDescription="@string/imgDescription"
         app:layout_constraintBottom_toBottomOf="@+id/imgFiveCents"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,9 +65,9 @@
 
     <ImageView
         android:id="@+id/imgQuarter"
-        android:layout_width="123dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="52dp"
+        android:layout_width="@dimen/imagedimen"
+        android:layout_height="@dimen/imagedimen"
+        android:layout_marginStart="@dimen/imgmarginstart"
         android:contentDescription="@string/imgDescription"
         app:layout_constraintBottom_toBottomOf="@+id/imgOneDollar"
         app:layout_constraintEnd_toStartOf="@+id/imgOneDollar"
@@ -80,9 +80,9 @@
 
     <ImageView
         android:id="@+id/imgOneDollar"
-        android:layout_width="123dp"
-        android:layout_height="123dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="@dimen/imagedimen"
+        android:layout_height="@dimen/imagedimen"
+        android:layout_marginEnd="@dimen/imgmarginend"
         android:contentDescription="@string/imgDescription"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,48 +93,48 @@
         app:srcCompat="@drawable/one_dollar" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtviewfivecents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="@dimen/txtviewmarginstart"
         android:text="@string/fiveCents"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="@+id/txtviewtencents"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/txtviewtencents"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtviewtencents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="@dimen/txtviewmarginendtencents"
         android:text="@string/tenCents"
         app:layout_constraintBottom_toTopOf="@+id/imgOneDollar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTenCents" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtviewquarter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="@dimen/txtviewmarginstart"
         android:text="@string/quarter"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="@+id/txtVWOndedollar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/txtVWOndedollar"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtVWOndedollar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginTop="@dimen/txtviewmargintopOnedollar"
+        android:layout_marginEnd="@dimen/txtviewmarginendOnedollar"
         android:text="@string/oneDollar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/txtviewquarter"
         app:layout_constraintTop_toBottomOf="@+id/imgOneDollar"
         app:layout_constraintVertical_bias="0.0" />
 
