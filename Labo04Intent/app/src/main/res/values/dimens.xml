@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingLinearLayout">25dp</dimen>
+    <dimen name="paddingBottomLinearLayout">15dp</dimen>
+    <dimen name="lastLLPaddingBottom">50dp</dimen>
+    <dimen name="titleTextSIze">25sp</dimen>
+    <dimen name="titlemarginbotton">15dp</dimen>
+    <dimen name="textinputmarginbottom">15dp</dimen>
+    <dimen name="buttonmargintop">25dp</dimen>
+</resources>
