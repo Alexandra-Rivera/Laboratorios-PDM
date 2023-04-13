@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Labo04-Intent</string>
+    <string name="txt01RellenaInformacion">Rellena la siguiente informacion</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="numero_de_telefono">Numero de telefono</string>
+    <string name="nombre">Nombre</string>
+    <string name="guardar">guardar</string>
+    <string name="nombre2">Nombre</string>
+    <string name="confirma_tu_informacipn">Confirma tu informacipn</string>
+    <string name="compartir">Compartir</string>
+</resources>
