@@ -1,4 +1,4 @@
-# Preguntas de laboratorios
+# Preguntas de laboratorio
 
 ## Laboratorio 04
 #### 2. ¿Menciona los tipos de intents que existen y un ejemplo de cada uno?
