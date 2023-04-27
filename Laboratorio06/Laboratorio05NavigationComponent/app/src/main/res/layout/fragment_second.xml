@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.NewMovieFragment"
+    android:background="@color/backgroundLayout"
+    android:padding="@dimen/fragmentPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Movie"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:textSize="50sp"
+            android:paddingBottom="15dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardLayout"
+            android:layout_marginBottom="25dp"
+            >
+
+            <EditText
+                android:id="@+id/movieNamefr2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/name"
+                android:padding="15dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardLayout"
+            android:layout_marginBottom="25dp"
+
+            >
+
+            <EditText
+                android:id="@+id/movieCategoryfr2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/category"
+                android:padding="15dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardLayout"
+            android:layout_marginBottom="25dp"
+
+            >
+
+            <EditText
+                android:id="@+id/movieDescriptionfr2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/description"
+                android:padding="15dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardLayout"
+            android:layout_marginBottom="25dp"
+
+            >
+
+            <EditText
+                android:id="@+id/movieQualificationfr2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/calification"
+                android:padding="15dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/submit"
+            android:background="@color/buttonColor"
+            />
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+</FrameLayout>
