@@ -26,74 +26,85 @@
             android:paddingBottom="15dp"
             />
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/cardLayout"
             android:layout_marginBottom="25dp"
+            app:boxStrokeColor="@color/white"
+            android:hint="@string/name"
+            android:textColorHint="@color/white"
             >
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/movieNamefr2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/name"
                 android:padding="15dp"
-
+                android:textColor="@color/white"
                 />
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/cardLayout"
             android:layout_marginBottom="25dp"
-
+            android:hint="@string/category"
+            android:textColorHint="@color/white"
             >
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/movieCategoryfr2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/category"
                 android:padding="15dp"
                 />
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/cardLayout"
             android:layout_marginBottom="25dp"
-
+            android:hint="@string/description"
+            android:textColorHint="@color/white"
             >
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/movieDescriptionfr2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/description"
                 android:padding="15dp"
-
                 />
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/cardLayout"
             android:layout_marginBottom="25dp"
-
+            android:hint="@string/calification"
+            android:textColorHint="@color/white"
             >
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/movieQualificationfr2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/calification"
                 android:padding="15dp"
                 />
-        </androidx.cardview.widget.CardView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <Button
             android:id="@+id/buttonSubmit"

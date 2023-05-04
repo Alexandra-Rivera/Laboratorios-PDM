@@ -8,6 +8,7 @@ import com.example.laboratorio05_navigationcomponent.data.model.MovieModel
 import com.example.laboratorio05_navigationcomponent.repositories.MovieRepository
 
 class MovieViewModel (private val movieRepository: MovieRepository): ViewModel() {
+
     fun getMovies() = movieRepository.getMovies()
 
     fun addMovies(movie: MovieModel) = movieRepository.addMovies(movie)
