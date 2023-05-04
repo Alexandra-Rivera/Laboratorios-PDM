@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Laboratorio05-NavigationComponent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="billboard">Billboard</string>
+    <string name="star_wars_movie">Star Wars Movie</string>
+    <string name="floatingbutton">floatingButton</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="calification">Calification</string>
+    <string name="siguiente">siguiente</string>
+    <string name="titulo">Star Wars Episodio 3: La venganza de la SIth</string>
+    <string name="genero">Ciencia ficcion</string>
+    <string name="image">image</string>
+    <string name="calificacion">9.8</string>\
+    <string name="movieDescription">La pelicula se centra en el personaje de ANakin SKywalker, quien esta siendo tentado por el lado oscuro de la fuerza mientras el imperio Glactico comienza a surgir. La trama tambien nuestra la caida de la Republica Galactica y el ascenso del Emperador Palpatine.</string>
+</resources>
