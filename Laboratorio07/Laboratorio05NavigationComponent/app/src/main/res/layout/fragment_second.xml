@@ -5,12 +5,12 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.laboratorio05_navigationcomponent.ui.MovieViewModel" />
+            type="com.example.laboratorio05_navigationcomponent.ui.movie.MovieViewModel" />
     </data>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.NewMovieFragment"
+        tools:context=".ui.movie.NewMovieFragment"
         android:background="@color/backgroundLayout"
         android:padding="@dimen/fragmentPadding">
 
@@ -121,12 +121,13 @@
 
             <Button
                 android:id="@+id/buttonSubmit"
-                android:onClick="@={() -> viewmodel.createMovie()}"
+                android:onClick="@{() -> viewmodel.createMovie()}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
                 android:text="@string/submit"
                 android:background="@color/buttonColor"
+                android:layout_gravity="center_horizontal"
                 />
 
         </LinearLayout>

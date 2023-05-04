@@ -1,10 +1,11 @@
-package com.example.laboratorio05_navigationcomponent.ui
+package com.example.laboratorio05_navigationcomponent.ui.movie
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import com.example.laboratorio05_navigationcomponent.MovieReviewerApplication
 import com.example.laboratorio05_navigationcomponent.data.model.MovieModel
 import com.example.laboratorio05_navigationcomponent.repositories.MovieRepository
 
@@ -15,8 +16,6 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
     var qualification = MutableLiveData(" ")
     var status = MutableLiveData(" ")
 
-    //Para poder conectar los datos de LiveData a la UI hacemos uso de DataBinding
-    //Ahora el ViewModel esta suscrito a datos de tipo LiveData
 
     fun getMovies() = movieRepository.getMovies()
 
@@ -37,7 +36,19 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
 
         addMovies(movie)
         clearData()
-        status.value = MOVIE_CREATED //Aqui se define el estado de que la Movie ha sido creada :0
+        status.value = MOVIE_CREATED //Aqui se define el estado de que la Movie ha sido creada 
+    }
+
+
+    //ValidateData verifica si el campo esta nulo (vacio) y si lo esta, va a retornar false. Con que uno de los datos este en false, siempre va a retornar false
+    private fun validateData(): Boolean {
+        when {
+            name.value.isNullOrEmpty() -> return false
+            category.value.isNullOrEmpty() -> return false
+            description.value.isNullOrEmpty() -> return false
+            qualification.value.isNullOrEmpty() -> return false
+        }
+        return true
     }
 
     //ClearData hace que cuando finalice el proceso de aniadir una nueva pelicula a la lista, los campos pasaran a estar vacios
@@ -52,22 +63,10 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
         status.value = INACTIVE
     }
 
-    //ValidateData verifica si el campo esta nulo (vacio) y si lo esta, va a retornar false. Con que uno de los datos este en false, siempre va a retornar false
-
-    private fun validateData(): Boolean {
-        when {
-            name.value.isNullOrEmpty() -> return false
-            category.value.isNullOrEmpty() -> return false
-            description.value.isNullOrEmpty() -> return false
-            qualification.value.isNullOrEmpty() -> return false
-        }
-        return true
-    }
-
     companion object {
         val Factory = viewModelFactory {
             initializer {
-                val app = this[APPLICATION_KEY] as MovieViewModel
+                val app = this[APPLICATION_KEY] as MovieReviewerApplication
                 MovieViewModel(app.movieRepository)
             }
         }
