@@ -24,7 +24,7 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
     fun createMovie() {
         if (!validateData()){
             status.value = WRONG_INFORMATION
-            return //este return va a parar el proceso (no se va a ejecutar el resto del if)
+            return
         }
 
         val movie = MovieModel(
@@ -36,11 +36,10 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
 
         addMovies(movie)
         clearData()
-        status.value = MOVIE_CREATED //Aqui se define el estado de que la Movie ha sido creada 
+        status.value = MOVIE_CREATED
     }
 
 
-    //ValidateData verifica si el campo esta nulo (vacio) y si lo esta, va a retornar false. Con que uno de los datos este en false, siempre va a retornar false
     private fun validateData(): Boolean {
         when {
             name.value.isNullOrEmpty() -> return false
@@ -51,7 +50,6 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
         return true
     }
 
-    //ClearData hace que cuando finalice el proceso de aniadir una nueva pelicula a la lista, los campos pasaran a estar vacios
     private fun clearData(){
         name.value = ""
         category.value = ""
@@ -72,6 +70,6 @@ class MovieViewModel (private val movieRepository: MovieRepository): ViewModel()
         }
         const val MOVIE_CREATED = "Movie created"
         const val WRONG_INFORMATION = "Wrong information"
-        const val INACTIVE = ""    //El estado inactivo hace que limpiemos el estado de LiveData, que puede estar en WRONG_INFORMATION o MOVIE_CREATED, y seteamos un estado inactivo
+        const val INACTIVE = ""
     }
 }
