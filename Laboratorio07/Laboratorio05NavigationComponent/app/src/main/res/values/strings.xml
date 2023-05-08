@@ -9,11 +9,14 @@
     <string name="name">Name</string>
     <string name="category">Category</string>
     <string name="description">Description</string>
-    <string name="calification">Calification</string>
+    <string name="qualification">Qualification</string>
     <string name="siguiente">siguiente</string>
     <string name="titulo">Star Wars Episodio 3: La venganza de la SIth</string>
     <string name="genero">Ciencia ficcion</string>
     <string name="image">image</string>
     <string name="calificacion">9.8</string>\
     <string name="movieDescription">La pelicula se centra en el personaje de ANakin SKywalker, quien esta siendo tentado por el lado oscuro de la fuerza mientras el imperio Glactico comienza a surgir. La trama tambien nuestra la caida de la Republica Galactica y el ascenso del Emperador Palpatine.</string>
+    <string name="titlefr2NewMovie">New Movie</string>
+    <string name="fab_button">FAB button</string>
+    <string name="fabbutton">FabButton</string>
 </resources>

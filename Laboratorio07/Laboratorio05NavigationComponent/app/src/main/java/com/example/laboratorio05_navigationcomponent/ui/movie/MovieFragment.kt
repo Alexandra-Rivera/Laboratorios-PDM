@@ -18,6 +18,4 @@ class MovieFragment : Fragment() {
         binding = FragmentThirdBinding.inflate(inflater, container, false)
         return binding.root
     }
-
-
 }
