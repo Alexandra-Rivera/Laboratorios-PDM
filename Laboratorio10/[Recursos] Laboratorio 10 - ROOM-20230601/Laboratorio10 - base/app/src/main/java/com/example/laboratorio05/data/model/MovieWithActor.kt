@@ -12,5 +12,4 @@ data class MovieWithActor(
         associateBy = Junction(CastModel::class)
     )
     val actors: List<ActorModel>
-
-)
+    )

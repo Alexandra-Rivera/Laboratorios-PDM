@@ -5,6 +5,7 @@ import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Transaction
 import com.example.laboratorio05.data.model.MovieModel
+import com.example.laboratorio05.data.model.MovieWithActor
 
 @Dao
 interface MovieDao {
@@ -16,5 +17,5 @@ interface MovieDao {
     suspend fun insertMovie(Movie: MovieModel)
 
     @Query("SELECT * FROM MOVIE_TABLE WHERE movieId = :id")
-    suspend fun getMovieWithActorById(id: Int): MovieModel?
+    suspend fun getMovieWithActorById(id: Int): MovieWithActor?
 }
